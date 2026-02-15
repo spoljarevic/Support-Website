@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support my work</title>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function(){ var t = localStorage.getItem('theme'); document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark'); })();
+  </script>
+</head>
+<body>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to light mode">Light mode</button>
+  <main class="page">
+    <header class="profile-section">
+      <img src="profile.jpg" alt="Profile" class="profile-image" width="160" height="160">
+      <h1 class="name">Luca Matteo Špoljarević</h1>
+      <p class="tagline">
+        Bash scripts, Ansible playbooks, Podman/Docker Compose files, and my blog — your support helps keep these and many other projects going.
+      </p>
+    </header>
+
+    <section class="support-section">
+      <h2 class="support-heading">Support me</h2>
+
+      <div class="support-block monero">
+        <h3>Monero (XMR)</h3>
+        <div class="address-wrap">
+          <code class="address" id="monero-address" title="Click to copy">89o4ezkv8NnWgY7XGaSbZRYeuCdGh9eKycCnn7NYtf5NUD8egDBNXbyHKQ4LgVeYvNiktXth3R3me7cpWSHvJAdkSjPAtcv</code>
+          <button type="button" class="copy-btn" data-copy="monero-address" aria-label="Copy Monero address">Copy</button>
+        </div>
+      </div>
+
+      <div class="support-block bitcoin">
+        <h3>Bitcoin (BTC)</h3>
+        <div class="address-wrap">
+          <code class="address" id="bitcoin-address" title="Click to copy">bc1q7rfkfjcfh3gp4y3aqj9e9af4ce6pnhdmxh2ex6</code>
+          <button type="button" class="copy-btn" data-copy="bitcoin-address" aria-label="Copy Bitcoin address">Copy</button>
+        </div>
+      </div>
+
+      <div class="support-block kofi">
+        <h3>Ko-fi</h3>
+        <div class="kofi-widget-wrap">
+        <script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+        <script type="text/javascript">kofiwidget2.init('Support my work', '#72a4f2', 'I3I7FRWK8');kofiwidget2.draw();</script>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="https://socials.spoljarevic.sh" target="_blank" rel="noopener noreferrer" class="footer-btn left">Socials</a>
+      <a href="https://techhub.social/@spoljarevic" target="_blank" rel="noopener noreferrer" class="footer-btn middle">Mastodon</a>
+      <a href="https://projects.spoljarevic.sh" target="_blank" rel="noopener noreferrer" class="footer-btn right">Projects</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
