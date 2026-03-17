@@ -211,6 +211,25 @@ body {
   border-color: var(--copy-success);
 }
 
+.support-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--btn-hover-text);
+  background: var(--btn-hover-bg);
+  border: 1px solid var(--btn-border);
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.support-link:hover {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+}
+
 .kofi-widget-wrap {
   text-align: center;
   display: flex;
